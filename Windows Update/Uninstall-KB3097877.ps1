@@ -1,10 +1,5 @@
-﻿#Jason - Uninstall KB3097877 specifically. 
+﻿wusa /uninstall /kb:3097877 /quiet /norestart
 
-#List updates in WMIC
-#wmic qfe list
-
-#Uninstall an Update
-powershell wusa /uninstall /kb:3097877 /quiet /norestart
+wmic qfe list  | Where-Object {$_.HotFixID -eq "KB3106932"} | Select-Object -Property InstallDate, HotFixID, InstalledOn | Format-List
 
 
-wmic qfe list

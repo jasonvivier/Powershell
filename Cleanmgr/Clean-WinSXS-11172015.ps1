@@ -89,10 +89,16 @@ function Install-MSU {
     ##
     ##Created by:       Noam Wajnman
     ##Creation Date:    August 26, 2014 
+    ##Modified Data 11.17.2015 - Jason - Added procedure
+    ##http://www.microsoft.com/downloads/details.aspx?FamilyId=3c2805f2-0867-4c5e-addf-9379efa99829
     ##############################################################################################
     #VARIABLES
     $file_KB2852386 = "$dir\Files\Windows6.1-KB2852386-v2-x64.msu"
     #FUNCTION MAIN
+    #If WIN_VER 7 OS_ARCH x86 
+   
+Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"  
+    Write-Output "Time taken: $((Get-Date).Subtract($start_time).Seconds) second(s)"  
     if (!(Get-HotFix -Id "KB2852386")) {
         Write-Host "Installing update KB2852386...."
         start -wait $file_KB2852386 -argumentlist "/quiet /norestart"

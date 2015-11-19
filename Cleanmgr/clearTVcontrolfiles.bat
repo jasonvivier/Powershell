@@ -1,0 +1,2 @@
+﻿del %HOMEPATH%\Downloads\tvcontrol*
+
