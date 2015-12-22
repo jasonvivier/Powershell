@@ -1,0 +1,12 @@
+﻿Installing assembly 'C:\users\adunin\desktop\powershell\PoshNet_installed.dll'.
+Affected parameters are:
+   logtoconsole = 
+   showcallstack = 
+   assemblypath = C:\users\adunin\desktop\powershell\PoshNet_installed.dll
+   logfile = C:\users\adunin\desktop\powershell\PoshNet_installed.InstallLog
+Committing assembly 'C:\users\adunin\desktop\powershell\PoshNet_installed.dll'.
+Affected parameters are:
+   logtoconsole = 
+   showcallstack = 
+   assemblypath = C:\users\adunin\desktop\powershell\PoshNet_installed.dll
+   logfile = C:\users\adunin\desktop\powershell\PoshNet_installed.InstallLog

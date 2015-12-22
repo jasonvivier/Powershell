@@ -1,0 +1,2 @@
+﻿[Environment]::ProcessorCount
+[Environment]::SystemPageSize
